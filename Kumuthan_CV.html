@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+    <html lang="en">   
+	<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <style>
+	
+	/* Creating table */
+	
+    body{
+	padding-left:30px;
+	padding-right:30px;
+ }
+ 
+	table {
+        border-collapse: collapse;
+        width: 50%;
+
+    }
+	
+	/* Styling the table */
+	
+    th, td {
+          padding: 5px;
+		  border:groove;
+		  margin:auto;
+		  padding-left:20px;
+		  padding-right:20px;
+    }
+	
+	/* Styling the header and footer for the page */
+	
+	header{
+	padding: 10px;
+    color: white;
+    background-color: #00a3cc;
+    clear: left;
+    text-align: center;
+	}
+	footer{
+	padding: 10px;
+    color: white;
+    background-color: #00a3cc;
+    clear: left;
+    text-align: center;
+	}
+	
+	#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;                  /* To avoid overlaping */
+    border: none; 
+    outline: none;                /* Removing outline */
+    background-color: DodgerBlue; 
+    color: white;                 /* Text color */
+    cursor: pointer;              /* It's for hover effect */
+    padding: 5px; 
+    border-radius: 10px;          /* Rounded corners */
+    font-size: 15px; 
+	}
+
+	#myBtn:hover {
+    background-color: #53acac; /* Colour changing effect for hover */
+	}
+	
+    </style>    
+    </head>
+	    
+	<body bgcolor="#ccf5ff">
+	
+	<script>
+	
+	// Creating the fuction for text zooming and unzooming
+	
+    function resizeText(multiplier) {
+        var element = document.getElementById("big");
+        var currentSize = element.style.fontSize || 1;
+        element.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
+    }
+	</script>
+	 	
+	<!-- Creating two buttons for zooming the text -->
+	 
+	<input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" /> 
+    <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
+	
+	<header>
+	<h1 align="left" > CURRICULUM VITAE <img src=Images/CV/Kumuthan_for_CV.jpg style="width:139px;height:140px;border-color:#00a3cc"  align="right" border="2px"/></h1>
+	
+	</header>   
+    
+        <table border="0px" id="big">	
+        <tr>
+          <td colspan="2"><h4 align="left"><u>Basic Information</u></h4></td>
+        </tr>
+		<tr>
+		  <td align="left">Title :</td>
+          <td>Mr.</td>
+         </tr>
+        <tr>
+		  <td align="left">First Name :</td>
+          <td>Kumuthan</td>
+         </tr>
+         <tr>
+            <td align="left">Last Name :</td>
+            <td>Sivarajah</td>
+          </tr>
+          <tr>
+          	  <td align="left">Date Of Birth :</td>
+          	  <td>18<sup>th</sup> November 1989</td>
+          </tr>
+          <tr>
+          	  <td align="left">Nationality :</td>
+          	  <td>Sri Lankan</td>
+          </tr>
+		  <tr>
+          	  <td colspan="2"><h4 align="left"><u>Contact Details</u></h4></td>
+          </tr>
+          <tr>
+		  	  <td align="left">Temporary Address :</td>
+              <td>#30/36, G1/3,</br>
+    			Charles Apartment,</br>
+                De-Silva Cross Road,</br>
+    			Kalubowila,</br>
+				Sri Lanka.</td>
+    
+          </tr>
+		  <tr>
+		  	  <td align="left">Permenant Address :</td>
+              <td>"Vasanthakam",</br>
+    			Alvai West Alvai,</br>
+                Nothern Province,</br>
+				Sri Lanka.</td>
+    
+          </tr>
+         <tr>
+          <td align="left">Phone :</td>
+		  <td align="left"> Mobile :</br>
+          	  +94 77 506 3313 </br>
+			  </br>
+			  Home :</br>
+          	  +94 21 226 4204</td>
+        </tr>
+        <div align="right"><div align="left"><tr>
+          <td align="left">Email ID :</td>
+          <td>kumuthan.2016001@iit.ac.lk</td>
+        </tr>
+		
+		<tr>
+          <td><h4 align="left"><u>Work Experiences</u></h4></td>
+        </tr>
+		<tr>
+          <td align="left">2015-2016 Administrative and Finance Assistant,</br>
+		  International Engineering Service (Pvt) Ltd.</br>
+		  Mount Lavinia</br>
+		  </br>
+		  2011-2014 Finance and Business Assistant,</br>
+		  Sapphire Jewellers,</br>
+		  Dehiwala</br>
+		  </td>          
+    	</tr>  
+        <tr>
+          <td><h4 align="left"><u>Eductional Qualification</u></h4></td>
+        </tr>
+        <tr>
+          <td align="left"><u>Undergraduate :</u> </br>
+		  </br>
+          2017-2021</br>
+		  Reading BEng Software Engineering,<br/> 
+		  Informatics Institute of Technology,</br>
+		  Sri Lanka</td>
+    	</tr>
+		<tr>
+          <td align="left"><u>School :</u></br>
+		  </br>
+          Grade 6 To GCE A/L<br/> 
+		  J/Hartley College,</br> Point Pedro</br>
+		  </br>
+		  Grade 1 To Grade 5</br>
+		  J/Thickam Sithy Vinayagar Vidyalayam</br>
+		  Thickam</td>
+    	</tr>
+		
+		</table>
+		
+		<!--  Creating Button for back to top -->
+		
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i>Back To Top</i></button>
+		
+		
+	
+	<script>
+	
+	// This function for pop up the "Back to Top" buttton
+
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) // For Safari
+	{
+        document.getElementById("myBtn").style.display = "block";
+    } else 
+	{
+        document.getElementById("myBtn").style.display = "none";
+    }
+	}
+
+	// This function for "Back to Top"
+	
+	function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	</script>	
+    
+	<!-- Making a horizontal line -->
+	<hr>
+	
+	<!-- Making footer -->
+	<footer>Created : 02/10/2018 \ Last Edited : 03/10/2018</footer>
+	
+	</body>	
+    </html>
+	
+	

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>FootBall 365 / Market Place</title>
+  
+  <meta charset="UTF-8">  
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" href="Images/12321.jpg" type="image/gif" sizes="16x16">
+  
+  <link type = "text/css" rel = "stylesheet" href = "External_CSS/NavigationBar.css"> <!-- Navigation Bar CSS -->
+  
+  <link type = "text/css" rel = "stylesheet" href = "External_CSS/Products.css"> <!-- Shopping Cart Main CSS -->
+  
+   
+    
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<script src="Java_Script/Products.js"></script>
+<script>
+function resizeText(multiplier) {
+    var elem = document.getElementById("big");
+    var currentSize = elem.style.fontSize || 1;
+    elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
+}
+</script>
+
+ </head>
+ 
+  
+ <body>
+ <div class = "container_01">
+        <div class = "header">
+            <div>
+                <div class = "navBar_Container">
+                    <img src = "Images/12321.jpg" height = "80px" width = "100px;" class = "logo" > 
+                    <div class = "navBar">
+                        <ul>
+                            <li><a href = "Homepage.html"> Home </a></li>
+                            <li><a href = "Quiz_1.html"> Quiz </a></li>
+                            <li><a href = "SiteMap.html"> Site Map </a></li>                
+                            <li><a href = "Products.html"> Products </a></li>
+                            <li><a href = "Gallery.html"> Gallery </a></li>
+							<li><a href = "AboutUs.html"> About Us </a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+	<div class="divider"></div>
+
+	<div id="big">
+	
+    <div id="mainsec"><!-------------------------------------------------------hiding part the website with cart------------------------------------------------------------------------------------------------------------->
+		
+		
+    <div class="ncontainer">
+		<img src="Images/Shopping_Gallery/banner1.jpg" height="350"  style="float: left;  width: 100%; margin-right: auto;">  
+		<img src="Images/Shopping_Gallery/banner2.jpg"  height="350"  style="float: left;  width: 50%; margin-right: auto;">
+		<img src="Images/Shopping_Gallery/banner3.jpg"  height="350" style="float: left; width: 50%; margin-right: auto;" >
+	</div>   
+    
+       
+<div>       
+    <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
+	<input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
+</div>
+		
+<div id="big">    
+		<h1>The Wears</h1>		
+	
+	
+	<section class="mainContent" >
+		<article class="productCart"><!-- Each individual product description -->
+             <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/jercy2.jpg"></div>
+			 
+			 <div class="productContent">
+             <h6 >£ 70.00</h6>
+             <h5>Argentina Home Replica Jersey</h5>
+            <button onclick='Add_to_Cart("jercy2",70)' class="buyButton">Buy</button>
+		  </div>	
+			
+   </article>
+   
+   
+   
+    <article class="productCart"><!-- Each individual product description -->
+             <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/jercy3.jpg"></div>
+             
+             <div class="productContent">
+                 <h6>£ 100.00</h6>
+              	 <h5>Germany Home Authentic Jersey</h5>
+                 <button onclick='Add_to_Cart("jercy3",100)' class="buyButton">Buy</button>
+       
+       </div>
+	   
+             
+   </article>
+	
+
+   <article class="productCart"><!-- Each individual product description -->
+			
+             <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/jercy4.jpg"></div>
+			 <div class="productContent">
+             <h6 >£ 100.00</h6>
+             <h5>Spain Home Authentic Jersy</h5>
+             <button onclick='Add_to_Cart("jercy7",100)' class="buyButton">Buy</button>
+			   </div>
+   </article>
+                                      
+
+          
+ <article class="productCart"><!-- Each individual product description -->
+			
+           <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/jercy5.jpg"></div>
+		   <div class="productContent">
+           <h6>£ 80.00</h6>
+           <h5>Germany Home Goalkeeper Jersey</h5>
+           <button onclick='Add_to_Cart("jercy5",80)' class="buyButton">Buy</button>
+		     </div>
+ </article>
+
+ <article class="productCart"><!-- Each individual product description -->
+           <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/jercy6.jpg"></div>
+		   <div class="productContent">
+           <h6 >£ 65.00</h6>
+           <h5>Real Madrid Warm Top</h5>
+           <button onclick='Add_to_Cart("jercy6",65)' class="buyButton">Buy</button>
+		     </div>
+ </article>
+
+		
+	</section>
+	
+	
+	
+	<!------------------------------------------------------------------! SECTION 2------------------------------------------------------------------------------------------------------------->
+	
+	<br/>
+	
+<nav class="product-filter" id="ball">
+		<h1>BALLS</h1>
+				
+</nav>
+	
+	
+<section class="mainContent">
+     
+ <article class="productCart"><!-- Each individual product description -->
+           <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/ball1.jpg"></div>
+		   <div class="productContent">
+           <h6 >£ 30.00</h6>
+           <h5>UCL Finale KIEV Trainning Ball</h5>
+           <button onclick='Add_to_Cart("ball1",30)' class="buyButton">Buy</button>
+		     </div>
+ </article>
+
+ 
+ <article class="productCart"><!-- Each individual product description -->
+           <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/ball2.jpg"></div>
+		   <div class="productContent">
+           <h6>£ 18.00</h6>
+           <h5>Tango Street glider Ball </h5>
+          <button onclick='Add_to_Cart("ball2",18)' class="buyButton">Buy</button>
+		    </div>
+ </article>
+
+ 
+ <article class="productCart"><!-- Each individual product description -->
+           <div class="product-image"><img src="Images/Shopping_Gallery/ball3.jpg" ></div>
+		   <div class="productContent">
+           <h6>£ 22.00</h6>
+           <h5>Torfabrik Ball</h5>
+           <button onclick='Add_to_Cart("ball3",22)' class="buyButton">Buy</button>
+		     </div>
+ </article>
+
+
+
+<article class="productCart"><!-- Each individual product description -->
+         <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/ball4.jpg"></div>
+		 <div class="productContent">
+         <h6>£ 120.00</h6>
+         <h5>UEFA Euopa League Official Match Ball </h5>
+         <button onclick='Add_to_Cart("ball4",120)' class="buyButton">Buy</button>
+		   </div>
+</article>
+
+
+<article class="productCart"><!-- Each individual product description -->
+         <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/ball5.jpg"></div>
+		 <div class="productContent">
+         <h6>£ 250.00</h6>
+         <h5>Fifa World Cup Jumbo Ball</h5>
+         <button onclick='Add_to_Cart("ball5",250)' class="buyButton">Buy</button>
+		   </div>
+</article>
+
+	</section>
+	
+	
+	<!---------------------------------------------------Section3-------------------------------------------------------------------------------------------------------------------------------->
+	
+	
+		<h1>ACCESSORIES</h1>
+	
+<section class="mainContent">
+		
+		<article class="productCart"><!-- Each individual product description -->
+          <div class="product-image"><img src="Images/Shopping_Gallery/gear1.jpg" ></div>
+		  <div class="productContent">
+          <h6>£ 28.00</h6>
+          <h5 class="productContent">Tiro Team bag Small</h5>
+         <button onclick='Add_to_Cart("gear1",28)' class="buyButton">Buy</button>
+		   </div>
+</article>
+
+<article class="productCart"><!-- Each individual product description -->
+          <div class="product-image"><img src="Images/Shopping_Gallery/gear2.jpg" ></div>
+		  <div class="productContent">
+          <h6 >£ 12.00</h6>
+          <h5 class="productContent">Adisocks Knee Socks</h5>
+          <button onclick='Add_to_Cart("gear4",12)' class="buyButton">Buy</button>
+		    </div>
+</article>
+
+
+
+<article class="productCart"><!-- Each individual product description -->
+        <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/gear3.jpg"></div>
+		<div class="productContent">
+        <h6>£ 12.00</h6>
+        <h5 class="productContent"> Soft Ground Studs Long</h5>
+        <button onclick='Add_to_Cart("Football curdle",12)' class="buyButton">Buy</button>
+		  </div>
+</article>
+
+<article class="productCart"><!-- Each individual product description -->
+        <div class="product-image"><img alt="sample" src="Images/Shopping_Gallery/gear4.jpg"></div>
+		<div class="productContent">
+        <h6>£ 15.00</h6>
+        <h5 class="productContent">Ghost Lesto Shin Guards</h5>
+        <button onclick='Add_to_Cart("Elastic Band",15)' class="buyButton">Buy</button>
+		  </div>
+</article>
+
+<article class="productCart"><!-- Each individual product description -->
+        <div class="product-image"><img src="Images/Shopping_Gallery/gear5.jpg" ></div>
+		<div class="productContent">
+        <h6>£ 90.00</h6>
+        <h5 class="productContent">TRX Band</h5>
+        <button onclick='Add_to_Cart("TRX Band",90)' class="buyButton">Buy</button>
+		  </div>
+</article>
+    
+		
+		
+	</section>
+	
+	<!----------------------------------------------------------------------------------------------------------Section4----------------------------------------------------------------------------------->
+	
+	</div><!-----------------------------------------------------------------------------------------Hiding the website with cart ends-------------------------------------------------------------------->
+ 
+ <div id="cartform">
+		
+	
+	 <h2 align="left">Finish Shopping</h2>
+    <from>
+        <div class="container">
+		
+    <label><h4>Name :</h4></label><input type="text" id="name" style="margin-left:10%; height:25px; width:25%;" placeholder="Your name.." onchange="validate();"/>
+	
+    <label><h4>Address :</h4></label><input type="text" id="ad1" style="margin-left:10%; height:25px; width:25%;" placeholder="Address Line-1" onchange="validate();"/><br/>
+	
+    <input type="text" id="ad2" style="margin-left:10%; height:25px; width:25%;" placeholder="Address Line-2"/>  
+    
+    <label><h4>Contact Number :</h4></label><input type="text" id="num" style="margin-left:10%; height:25px; width:25%;" placeholder="Only 10 Digits" onchange="validate();"/>
+	
+    <br /><br />
+	
+	<input type="button" value="PROCEED TO CART" id="ok" onclick="hide();"/>
+	
+            </div>
+        </from>
+	
+	</div>
+	
+
+		 </div>
+	</div>
+<br/>
+	<footer><a href="Kumuthan_CV.html" style="color: #fcfcfc" target="_blank">Created By : S.Kumuthan </a></footer>	
+</body>
+</html>

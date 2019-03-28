@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title> FootBall 365 / About Us </title>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 
+	<link type = "text/css" rel = "stylesheet" href = "External_CSS/NavigationBar.css"> 
+	<link rel="icon" href="Images/12321.jpg" type="image/gif" sizes="16x16"> 
+    
+<style>
+.main{
+    text-align: center;
+    margin-top: 150px;
+	padding-left:20px;
+	padding-bottom:50px;    
+    
+}
+.container_01{
+    width: 100%;
+    height: 100%;
+    background-image: url("abc.jpg"); 
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.container-about{
+    cursor: pointer;
+}
+
+.caption {
+    position: relative;
+    overflow: hidden;
+
+
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.caption::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+
+.caption:hover::before {
+    background: rgba(0, 0, 0, .5);
+}
+
+
+.caption__overlay {
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.caption__overlay__title {
+    -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+    transform: translateY( calc(-100% - 10px) );
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay__title {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.about-thumbs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-about {
+    flex-basis: 24%;
+}
+
+.cv-description {
+    margin: 10px;
+}
+footer{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    color: white;
+    text-align: center;
+	padding: 10px;
+    color: white;
+    background-color: rgb(0, 191, 182);
+    clear: left;
+    
+	
+}
+    
+</style>
+    
+    
+  </head>
+  
+  <body bgcolor="#f3fffe">
+  
+  <header>   
+            
+        <div class = "container_01">
+        <div class = "header">
+            <div>
+                <div class = "navBar_Container">
+                    <img src = "Images/12321.jpg" height = "80px" width = "100px;" class = "logo"> 
+                    <div class = "navBar">
+                        <ul>
+                            <li><a href = "Homepage.html"> Home </a></li>
+                            <li><a href = "Quiz_1.html"> Quiz </a></li>
+                            <li><a href = "SiteMap.html"> Site Map </a></li>                
+                            <li><a href = "Products.html"> Products </a></li>
+                            <li><a href = "Gallery.html"> Gallery </a></li>
+							<li><a href = "AboutUs.html"> About Us </a></li>
+                        </ul>
+                    </div>               
+                          
+                    </div>
+					
+                </div>
+				
+            </div>
+        </div>
+    </header>
+
+    <div>
+	
+        <div class="main">
+            <div class="shadow-wrapper" style="text-align:center">
+			
+                <h1>About Us</h1>
+                <div class="cv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					 						<br> 
+				                            Veritatis delectus inventore perspiciatis sunt dicta expedita
+											<br> 
+											impedit rerum atque reprehenderit accusantium, vitae exercitationem
+											<br> 
+											iste aspernatur, consequuntur similique assumenda nihil. Quam, numquam!
+					</div>
+					</div>
+
+
+                <div class="about-thumbs">
+                    <div class="container-about" onclick="viewCV('Kumuthan')">
+
+
+                        <article class="caption">
+						<img class="caption__media" src="Images/CV/Kumuthan_for_CV.jpg" style="width:225px;height:225px;" border="5"/>
+						<div class="caption__overlay">
+                                <h1 class="caption__overlay__title">Student 1</h1>
+                                <p class="caption__overlay__content">
+                                    Name : Kumuthan Sivarajah <br> IIT ID : 2016001 <br> UOW ID : w1673599 <br><a href="Kumuthan_CV.html" style="color: #fcfcfc" target="_blank">To CV</a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <div class="container-about" onclick="viewCV('Aartheesan')">
+                        <article class="caption">
+                            <img class="caption__media" src="Images/CV/aaa.jpg" style="width:225px;height:225px;" border="5"/>
+                            <div class="caption__overlay">
+                                <h1 class="caption__overlay__title">Student 2</h1>
+                                <p class="caption__overlay__content">
+                                    Name : Arthesan Suthesvaran <br> IIT ID : 2016305 <br> UOW ID : w1673629 <br><a href="arthy_cv.html" style="color: #fcfcfc" target="_blank">To CV</a>
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="container-about" onclick="viewCV('Keerthigan')">
+
+                        <article class="caption">
+                            <img class="caption__media" src="Images/CV/keerthigan.jpg" style="width:225px;height:225px;" border="5"/>
+                            <div class="caption__overlay">
+                                <h1 class="caption__overlay__title">Student 3</h1>
+                                <p class="caption__overlay__content">
+                                    Name : Keerthigan Pushparaj <br> IIT ID : 2016197 <br> UOW ID : w1673619 <br><a href="keerthigan_CV.html" style="color: #fcfcfc" target="_blank">To CV</a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="container-about"onclick="viewCV('Akshai')">
+
+                        <article class="caption">
+							<img class="caption__media" src="Images/CV/akshai2.jpg" style="width:225px;height:225px;" style="width:200px;height:225px;" border="5"/>
+                            <div class="caption__overlay">
+                                <h1 class="caption__overlay__title">Student 4</h1>
+                                <p class="caption__overlay__content">
+                                    Name : Akshai Yogalingam <br> IIT ID : 2017 <br> UOW ID : w1674 <br><a href="Akshai_CV.html" style="color: #fcfcfc" target="_blank">To CV</a>
+                                </p>
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+<footer><a href="keerthigan_CV.html" style="color: #fcfcfc" target="_blank">Created By : P.Keerthigan </a></footer>
+
+  </body>
+</html>

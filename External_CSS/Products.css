@@ -1,0 +1,182 @@
+
+/*$MAIN*/
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1328px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #f6f6f6;
+}
+
+/* Typography */
+
+h1 {
+   padding-left:35px;
+  color:black;
+  font-size:3.5em;
+}
+
+h4 {
+  padding-left:35px;
+  color:black;
+  font-size:1.75em;
+}
+
+h5 {
+	font-weight: 500;
+	line-height: 1.7em;
+    font-size:18px;
+}
+
+h6 {
+	font-weight: 600;
+	
+    font-size:18px;
+    margin-top:-0%;
+}
+
+/* Product Layout */
+
+.product-filter {
+	display: flex;
+	padding: 30px 0;
+}
+
+
+label {
+	color: #666;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+.mainContent {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.productCart {
+	display: flex;
+	flex-direction: column;
+	
+	padding: 2%;
+	flex: 1 16%;
+	
+	background-color: #FFF;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+	width: 100%;
+}
+
+.productContent {
+	margin-top: auto;
+	padding-top: 20px;
+	text-align: center;
+}
+
+@media ( max-width: 920px ) {
+	
+	.productCart {
+		flex: 1 21%;
+	}
+	
+	.mainContent .productCart:first-child, 
+	.mainContent .productCart:nth-child(2) {
+		flex: 2 46%;
+	}
+	
+}
+
+@media ( max-width: 600px ) {
+	
+	.productCart {
+		flex: 1 46%;
+	}
+	
+}
+
+@media ( max-width: 480px ) {
+	
+	h1 {
+		margin-bottom: 20px;
+	}
+	
+	.product-filter {
+		flex-direction: column;
+		
+	}	
+}
+		
+button{			
+    background-color:#c9bf0c;
+    border: none;
+    color: white;text-decoration:inherit;
+    margin: 9px 4px;
+    cursor: pointer;
+    font-size:20px;       
+	}
+    	
+
+		
+table{
+	width: 100%;
+}
+
+@font-face {
+    font-family:SF Sports Night,Piratekeg_i;
+    src: url('Font/SFSportsNight.ttf');
+    src:url('Font/Piratekeg_i.ttf');
+    }
+
+    html {
+    background: url(c.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+&nbsp;.container {
+        width: 400px;
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+         width: 400px;
+    height: 250px;
+    padding: 20px;
+    border: 14px outset darkblue;
+    border-radius: 15px;
+    
+    }
+    .container input {
+        width: 80%;
+        clear: both;
+        border: 2px solid red;
+        border-radius: 4px;
+        margin: 4px 4px;
+    }
+    
+    #ok{
+    background-color:#c9bf0c;
+    border: none;
+    color: white;
+    text-decoration:inherit;
+    margin: 4px 4px;
+    cursor: pointer;
+    font-size:20px;
+    width:500px;
+    
+        }
+        
+
+		
